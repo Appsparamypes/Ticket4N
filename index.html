@@ -99,11 +99,9 @@
         // Obtener los valores de los parámetros
         var nombre_empresa = params.has('nombre_empresa') ? params.get('nombre_empresa') : "---";
         var whatsapp = params.has('whatsapp') ? params.get('whatsapp') : "---";
-        var tipo = params.has('tipo') ? params.get('tipo') : "---";
         var nro_boleta = params.has('boleta') ? params.get('boleta') : "---";
         var logo = params.has('logo') ? params.get('logo') : "---";
         var direc = params.has('direccion') ? params.get('direccion') : "---";
-        var observ = params.has('observacion') ? params.get('observacion') : "---";
         var client = params.has('cliente') ? params.get('cliente') : "---";
 
         var fecha = params.has('fecha') ? params.get('fecha') : "dd/mm/aaaa hh:mm:ss";
@@ -231,12 +229,10 @@
             </p>
     </div>
     <script>
-      var tipoElement = document.getElementById("tipo").textContent = tipo;
-      var whatsappElement = document.getElementById("whatsapp").textContent = whatsapp;
+        var whatsappElement = document.getElementById("whatsapp").textContent = whatsapp;
         var nroBoletaElement = document.getElementById("nro_boleta_id").textContent = nro_boleta;
         var nroDireccion = document.getElementById("nro_direccion_id").textContent = direc;
-      var observacion = document.getElementById("observacion_id").textContent = observ;
-      var cliente = document.getElementById("cliente_id").textContent = client;
+        var cliente = document.getElementById("cliente_id").textContent = client;
         var fecha_entregaElement = document.getElementById("fecha").textContent = fecha;
         var totalElement = document.getElementById("total").textContent = total;
         var a_cuentaElement = document.getElementById("a_cuenta").textContent = a_cuenta;
